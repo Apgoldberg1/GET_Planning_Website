@@ -1,0 +1,82 @@
+{
+  "arch_1": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.10348207889729266
+  },
+  "arch_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.2348336295719775
+  },
+  "bar_clamp_1": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.1602404501360027
+  },
+  "bar_clamp_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.1755795875943945
+  },
+  "camera_mount_1": {
+    "force_closure_rate": 0.9,
+    "ferrari_canny": 0.04484625180973727
+  },
+  "camera_mount_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.20928853570709044
+  },
+  "clamp_1": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.12240148758149241
+  },
+  "clamp_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.11040758566828071
+  },
+  "climbing_hold_1": {
+    "force_closure_rate": 0.9,
+    "ferrari_canny": 0.12878491738152745
+  },
+  "climbing_hold_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.08975681394923105
+  },
+  "gearbox_1": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.11617901828525075
+  },
+  "gearbox_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.19757132242874192
+  },
+  "mount2_1": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.1085387223300948
+  },
+  "mount2_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.1739926083859824
+  },
+  "paper_towel_1": {
+    "force_closure_rate": 0.9,
+    "ferrari_canny": 0.09486680120259441
+  },
+  "paper_towel_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.09102521191752913
+  },
+  "tape_1": {
+    "force_closure_rate": 0.9,
+    "ferrari_canny": 0.16074709932276166
+  },
+  "tape_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.1127527209600963
+  },
+  "turbine_1": {
+    "force_closure_rate": 0.7,
+    "ferrari_canny": 0.0993440120753036
+  },
+  "turbine_2": {
+    "force_closure_rate": 1.0,
+    "ferrari_canny": 0.1506074558347543
+  }
+}
