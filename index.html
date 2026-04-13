@@ -193,7 +193,7 @@
 
     /* ─── Main body ──────────────────────────────────────── */
     main {
-      padding: var(--space-md) 0 var(--space-3xl);
+      padding: var(--space-md) 0 var(--space-xl);
     }
 
     /* ─── Section layout ─────────────────────────────────── */
@@ -222,13 +222,7 @@
       gap: var(--space-sm);
     }
 
-    .section-number::after {
-      content: '';
-      display: block;
-      height: 1px;
-      width: 32px;
-      background: var(--border-strong);
-    }
+    .section-number::after { display: none; }
 
     h2 {
       font-family: var(--font-display);
@@ -541,6 +535,35 @@
       padding-top: var(--space-md);
     }
 
+    /* ─── Footer ────────────────────────────────────────── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: var(--space-lg) 0;
+      margin-top: 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      font-size: 0.82rem;
+      color: var(--text-tertiary);
+    }
+
+    .footer-inner a {
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color 0.12s;
+    }
+
+    .footer-inner a:hover {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
     /* ─── TODO / Coming soon notice ─────────────────────── */
     .coming-soon {
       display: inline-flex;
@@ -668,6 +691,13 @@
     }
 
     /* ─── Video caption ──────────────────────────────────── */
+    .fig-caption a {
+      color: var(--text-secondary);
+      text-decoration: underline;
+      text-decoration-color: var(--border-strong);
+      text-underline-offset: 3px;
+    }
+
     .fig-caption {
       font-size: 0.9rem;
       color: var(--text-tertiary);
@@ -911,15 +941,22 @@
       </p>
 
       <h3>Robot Shake Test &amp; Force Probe</h3>
-      <div style="display: grid; grid-template-columns: 2.213fr 1fr; gap: 2px; align-items: start;">
+      <div style="display: grid; grid-template-columns: 2.254fr 1fr; gap: 2px; align-items: start;">
         <video src="media/shake_test_2_sdr.mp4" autoplay muted loop playsinline style="width: 100%; aspect-ratio: 4/3; display: block; border-radius: var(--radius); object-fit: cover; filter: brightness(0.75);"></video>
-        <img src="media/force_probe_on_object.jpg" alt="Force probe on object" style="width: 100%; aspect-ratio: 1406/2337; object-fit: cover; border-radius: var(--radius); display: block;" />
+        <img src="media/force_probe_on_object.jpg" alt="Force probe on object" style="width: 100%; aspect-ratio: 781/1320; object-fit: cover; border-radius: var(--radius); display: block;" />
       </div>
-      <p class="fig-caption">Shake test and slip-force probe evaluation used to evaluate grasp robustness.</p>
+      <p class="fig-caption">Shake test and force probe used to evaluate grasp robustness. <a href="https://a.co/d/09lI1K9i" target="_blank" rel="noopener">Hojila force probe (Amazon)</a>.</p>
     </div>
 
   </main>
 </div><!-- /page-wrap -->
+
+<footer>
+  <div class="page-wrap footer-inner">
+    <span>2026 UC Berkeley</span>
+    <a href="mailto:apgoldberg@berkeley.edu">apgoldberg@berkeley.edu</a>
+  </div>
+</footer>
 
 <script>
   // ── Video switcher ──────────────────────────────────────
