@@ -745,7 +745,7 @@
       </div>
 
       <div class="header-actions">
-        <a href="media/GET_Planning_Paper.pdf" class="action-link" target="_blank" rel="noopener">
+        <a href="https://arxiv.org/pdf/2604.26212" class="action-link" target="_blank" rel="noopener">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
             <polyline points="14 2 14 8 20 8"/>
@@ -781,38 +781,35 @@
     <!-- § Demonstrations -->
     <div class="section">
       <div class="section-number">Demonstrations</div>
-      <h2>GET-3D-1.0 Grasp Executions</h2>
+      <h2>GET-2D-1.0 Grasp Executions</h2>
       <div class="video-stage">
         <video id="mainVideo" autoplay muted loop playsinline
-               src="media/grasp_videos/Yellow Cam mount 4x3.mp4"></video>
+               src="media/hole_grasp_videos/bottle.mp4"></video>
         <div class="video-thumbs" id="videoThumbs">
-          <button class="video-thumb active" data-src="media/grasp_videos/Yellow Cam mount 4x3.mp4" aria-label="Yellow camera mount" aria-pressed="true">
-            <img src="media/grasp_videos/thumbs/Yellow Cam mount 4x3.jpg" alt="" />
+          <button class="video-thumb active" data-src="media/hole_grasp_videos/bottle.mp4" aria-label="Bottle" aria-pressed="true">
+            <img src="media/hole_grasp_videos/thumbs/bottle.jpg" alt="" />
           </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Paper towel 4x3.mp4" aria-label="Paper towel" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Paper towel 4x3.jpg" alt="" />
+          <button class="video-thumb" data-src="media/hole_grasp_videos/tissue.mp4" aria-label="Tissue box" aria-pressed="false">
+            <img src="media/hole_grasp_videos/thumbs/tissue.jpg" alt="" />
           </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Red Thing 4x3.mp4" aria-label="Red Thing" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Red Thing 4x3.jpg" alt="" />
+          <button class="video-thumb" data-src="media/hole_grasp_videos/filament.mp4" aria-label="Filament" aria-pressed="false">
+            <img src="media/hole_grasp_videos/thumbs/filament.jpg" alt="" />
           </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Clamp 4x3.mp4" aria-label="Clamp" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Clamp 4x3.jpg" alt="" />
+          <button class="video-thumb" data-src="media/hole_grasp_videos/mount.mp4" aria-label="Yellow mount" aria-pressed="false">
+            <img src="media/hole_grasp_videos/thumbs/mount.jpg" alt="" />
           </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Climbing hold 4x3.mp4" aria-label="Climbing hold" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Climbing hold 4x3.jpg" alt="" />
+          <button class="video-thumb" data-src="media/hole_grasp_videos/towel.mp4" aria-label="Paper towel" aria-pressed="false">
+            <img src="media/hole_grasp_videos/thumbs/towel.jpg" alt="" />
           </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Orange Bar Clamp 4x3.mp4" aria-label="Orange bar clamp" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Orange Bar Clamp 4x3.jpg" alt="" />
+          <button class="video-thumb" data-src="media/hole_grasp_videos/pvc.mp4" aria-label="PVC" aria-pressed="false">
+            <img src="media/hole_grasp_videos/thumbs/pvc.jpg" alt="" />
           </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Purple 3d 4x3.mp4" aria-label="Purple 3D printed part" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Purple 3d 4x3.jpg" alt="" />
-          </button>
-          <button class="video-thumb" data-src="media/grasp_videos/Tape 4x3.mp4" aria-label="Tape" aria-pressed="false">
-            <img src="media/grasp_videos/thumbs/Tape 4x3.jpg" alt="" />
+          <button class="video-thumb" data-src="media/hole_grasp_videos/climbing.mp4" aria-label="Climbing hold" aria-pressed="false">
+            <img src="media/hole_grasp_videos/thumbs/climbing.jpg" alt="" />
           </button>
         </div>
       </div>
-      <p class="fig-caption">Click a thumbnail to switch videos. Videos shown at real execution speed.</p>
+      <p class="fig-caption" style="max-width: none;">Click a thumbnail to switch videos. Videos shown at real execution speed. Grasps generated using the hole grasp sampler in GET-2D-1.0.</p>
     </div>
 
     <!-- § Overview -->
@@ -824,8 +821,8 @@
         We present GET-2D-1.0 and GET-3D-1.0, grasp planners for the GET gripper which take advantage of the GET gripper's asymmetric geometry to plan robust grasps.
         <!-- We modify the design to be 3D printed in PLA and use friction tape for stronger friction forces and three layers of Very High Bond tape for finger compliance. -->
       </p>
-      <div class="method-figure" style="margin-bottom: var(--space-sm); padding: 12px 16px; overflow: visible; margin-top: var(--space-lg);">
-        <img src="media/gripper_comparison.jpg" alt="GET gripper comparison" />
+      <div class="method-figure" style="margin-bottom: var(--space-sm); padding: 0; overflow: hidden; margin-top: var(--space-lg); border: 1px solid var(--border); border-radius: var(--radius);">
+        <img src="media/cup_grasps.jpg" alt="GET gripper comparison" />
       </div>
       <p class="fig-caption" style="margin-bottom: var(--space-xl); max-width: none;">(a) Narrow jaws are susceptible to torque about the grasp axis. (b) Wide jaws cannot access small concavities. (c) The GET Gripper provides asymmetric geometry which addresses both limitations.</p>
     </div>
